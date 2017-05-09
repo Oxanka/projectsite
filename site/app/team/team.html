@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Teams</h2>
+    <hr>
+    <div ng-repeat="teams in teams">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="title_news">{{teams.name}}  &#8711;</span><br>
+            </div>
+            <div class="col-md-4" ng-repeat="team in teams.team">
+                <div class="row">
+                    <img class="img_file col-md-6" src={{team.img}}>
+                    <h5 class="col-md-10 name_file">{{team.name}}</h5>
+                </div>
+            </div>
+        </div><br><hr>
+    </div>
+</div>

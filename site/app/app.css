@@ -1,0 +1,91 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border: 0.1em solid black;
+  /*border-bottom: 0.1em solid black;*/
+  /*margin-bottom: 2em;*/
+  /*padding: 0 0 0.5em;*/
+  /*text-align: center;*/
+  font-size: 20px;
+  width: 100%;
+}
+
+/*.menu > li {*/
+  /*display: inline;*/
+  /*width: 25%;*/
+  /*!*padding-right: 30px;*!*/
+  /*!*text-align: center;*!*/
+  /*!*background-color: dodgerblue;*!*/
+  /*!*width: 300px;*!*/
+/*}*/
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.menu ul {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.menu li {
+  float: left;
+  width: 25%;
+  background-color: #2aabd2;
+  color: #000000;
+  /*text-align: center;*/
+}
+.img_small {
+  height: 150px;
+  width: 150px;
+  padding-top: 30px;
+}
+
+.row-style{
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.text{
+  margin-top: 25px;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+.text_logo{
+  margin-top: 10px;
+  font-size: 36px;
+}
+.italic_text{
+  font-style: italic;
+}
+.title_news{
+  font-size: 20px;
+  color: dodgerblue;
+}
+.user_name{
+  text-align: right;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.padding{
+  padding-bottom: 20px;
+}
+.img_file{
+  width: 120px;
+  height: 220px;
+}
+.name_file{
+  margin-left: 55px;
+  /*text-align: center;*/
+}
+.tools{
+  margin-top: 70px;
+}
+.home_account{
+  margin-top: 20px;
+}

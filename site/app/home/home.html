@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row row-style" ng-repeat="new in news">
+
+        <div class="col-md-2 img">
+            <img class="img_small" src={{new.img}}>
+        </div>
+
+        <div class="col-md-9 text">
+            <span class="title_news" ng-click="openNew(new)"><b>{{new.name}}</b></span><br>
+            <span class="italic_text">{{new.date}}</span><br><br>
+            <p class="text-justify">{{new.text}}</p><br>
+        </div>
+
+    </div>
+</div>

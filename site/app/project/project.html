@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>My Projects</h2>
+    <hr>
+    <div ng-repeat="project in projects">
+        <div class="row">
+            <div class="col-md-12">
+                <h4><b>{{project.name}}  &#8711;</b></h4><br>
+            </div>
+            <div class="col-md-4" ng-repeat="file in project.file">
+                <div class="row">
+                    <img class="img_file col-md-6" src={{file.img}}>
+                    <h5 class="col-md-10 name_file">{{file.name}}</h5>
+                </div>
+            </div>
+        </div><br>
+    </div>
+</div>
