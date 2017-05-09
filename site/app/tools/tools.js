@@ -6,6 +6,8 @@ angular.module('myApp.tools', ['ngRoute'])
 
     .controller('ToolsCtrl', function($scope, $rootScope) {
 
+        $scope.user = JSON.parse(window.localStorage.login_user);
+
         $scope.tools = [
             {
                 name: "Редактор UML",

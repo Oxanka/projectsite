@@ -5,6 +5,8 @@ angular.module('myApp.teams', ['ngRoute'])
 
     .controller('TeamsCtrl', function ($scope, $rootScope) {
 
+        $scope.user = JSON.parse(window.localStorage.login_user);
+
         $scope.teams = [
             {
                 name: 'Команды пользователя',

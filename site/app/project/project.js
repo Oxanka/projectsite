@@ -6,6 +6,8 @@ angular.module('myApp.project', ['ngRoute'])
 
     .controller('ProjectCtrl', function($scope, $rootScope) {
 
+        $scope.user = JSON.parse(window.localStorage.login_user);
+
         $scope.projects = [
             {
                 name: 'UML',

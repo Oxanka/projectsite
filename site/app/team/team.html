@@ -1,3 +1,65 @@
+<div>
+    <div class="container-fluid padding">
+        <div class="row">
+            <div class="col-md-1">
+                <img class="logo" src="img/logo-tv-logo.png">
+            </div>
+            <div class="col-md-2 text_logo">
+                <span> C4ITS</span>
+            </div>
+            <div class="col-md-7 user_name">
+                <span>Hi, {{user.name}}</span>
+                <!--<span>Hi, User</span>-->
+            </div>
+            <div class="col-md-1 home_account">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#!/login">Exit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <img class="logo" src="img/user.png">
+            </div>
+        </div>
+    </div>
+    <!--<ul class="menu">-->
+    <!--<li><a href="#!/home">Feed</a></li>-->
+    <!--<li><a href="#!/team">Team</a></li>-->
+    <!--<li><a href="#!/project">Projects</a></li>-->
+    <!--<li><a href="#!/tools">Tools</a></li>-->
+    <!--</ul>-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!—Название сайта и кнопка раскрытия меню для мобильных-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Menu</a>
+            </div>
+
+            <!—Само меню-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li id="feed"><a href="#!/home">Feed</a></li>
+                    <li id="team"><a href="#!/team">Team</a></li>
+                    <li id="project"><a href="#!/project">Projects</a></li>
+                    <li id="tools"><a href="#!/tools">Tools</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
 <div class="container">
     <h2>Teams</h2>
     <hr>

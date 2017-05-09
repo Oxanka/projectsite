@@ -7,12 +7,24 @@ angular.module('myApp', [
     'myApp.teams',
     'myApp.tools',
     'myApp.infofeed',
+    'myApp.start',
+    'myApp.login',
 
 ])
     .config(function ($locationProvider, $routeProvider, $httpProvider) {
         $httpProvider.defaults.useXDomain = true;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
         $routeProvider
+            .when('/start',
+            {
+                templateUrl: 'start/start.html',
+                controller: 'StartCtrl'
+            })
+            .when('/login',
+            {
+                templateUrl: 'login/login.html',
+                controller: 'LoginCtrl'
+            })
             .when('/home',
             {
                 templateUrl: 'home/home.html',
@@ -37,6 +49,7 @@ angular.module('myApp', [
 
         $locationProvider.hashPrefix('!');
         $httpProvider.defaults.headers.common["Content-Type"] = "application/json";
-        $routeProvider.otherwise({redirectTo: '/home'});
+        $routeProvider.otherwise({redirectTo: '/start'});
+        // $routeProvider.otherwise({redirectTo: '/home'});
     })
 

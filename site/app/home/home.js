@@ -6,6 +6,9 @@ angular.module('myApp.home', ['ngRoute'])
 
     .controller('HomeCtrl', function($scope, $rootScope, $location) {
 
+        $scope.user = JSON.parse(window.localStorage.login_user);
+
+        console.log($scope.user);
         $scope.news = [
             {
             name: "Новость 1",
